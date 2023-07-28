@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        li{
+            display: inline;
+            padding-left: 60px;
+            
+        }
+        body{
+           background-color: solid silver;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 10%;
+            width: 100%;
+        }
+        pre{
+            font-size: x-large;
+            font-style: bold;
+           
+        }
+       footer{
+       background-image: url(images/North\ Pole\ Igloos.avif);
+       }
+  
+       
+    </style>
+    <script>
+        function function1()
+        {
+            var m= parseInt(frm1.t2.value);
+            var e= parseInt(frm1.t3.value);
+            var c= parseInt(frm1.t4.value);
+            var s= parseInt(frm1.t5.value);
+            var tmarks= m + e + c + s
+            var max
+            frm1.t6.value=tmarks
+            frm1.t7.value=tmarks/4
+
+
+
+            if(m>e && m>c && m>s)
+            {
+            max=m
+            }
+            else if(e>m && e>c && e>s)
+            {
+            max=e
+            }
+            else if(c>m && c>e && c>s)
+            {
+            max=c
+            }
+            else{
+                max=s
+            }
+            frm1.t8.value=max
+
+
+        }
+    </script>
+</head>
+
+    <center>
+        <div style="background-color: rgb(63, 6, 155); border-radius: 20px; color: white;">
+            <h2>STUDENT MARKS </h2>
+            <form name="frm1" onsubmit="return jfun1()">
+                <pre>
+                    Name:        <input type="text" name="t1"> <br>
+                    <p>MARKS</p> <br>
+                    Maths: <input type="text" name="t2"  >    English: <input type="text" name="t3" > 
+                    Computer: <input type="text" name="t4" >  Science: <input type="text" name="t5" > 8
+                    <p>Result</p> <br>
+                    Total Marks: <input type="text" name="t6"  > %Marks: <input type="text" name="t7"  > 
+                    Max Marks: <input type="text" name="t8"  > 
+                   
+                    <button type="button" class="btn btn-secondary" onclick="function1()" value="Result" >Result</button>
+                
+                </pre>
+            </form>
+        </div>
+    </center>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.9825269852313!2d76.87744487520527!3d12.517316387757853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafa0fa2477e217%3A0x7f46df666eecd99!2sPES%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1690193990827!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+</body>
+<footer style="border: 3px solid rgb(247, 243, 243); color: black; padding: 10px; background-color: lightblue; margin-bottom: 0; color: aliceblue;">
+    <p style="font-size: 20px; text-align: center;">All the very best for your future.</p>
+</footer>
+</html>
